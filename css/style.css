@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+.cv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin:auto
+}
+.colgauche{
+    display: flex;
+    flex-direction: column;
+    background: #fa8231;
+    width:300px ;
+}
+.coldroite{
+    display: flex;
+    background: white;
+}
+
+/********************************** COLONNE DE GAUCHE ***************************/
+/* PICTURE */
+figure{
+    display:flex
+}
+img{
+    margin: auto;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+/* ASISDE  */
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aside-text{
+    margin: 1rem;
+}
+.aside-text p{
+    padding: 0.8rem;
+}
+.aside-text a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.asidetitle{
+    background: black;
+    color: #fa8231;
+    text-align: center;
+}
+/* about me  */
+
+.about-me{
+    flex-grow: 1;  
+}
+
+/* LOISIRS */
+
+.aside-icon{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.icon{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/********************************** COLONNE DE DROITE *******************************/
+
+main{
+    display: flex;
+    flex-direction:column ;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+h4{
+    padding-bottom: 0.5rem;
+}
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+h1{
+    font-weight: 300;
+}
+h2{
+    font-weight: 400;
+}
+
+.under{
+    text-decoration: underline;
+    text-decoration-color:#fa8231;
+}
+.prenom{
+    color: #fa8231;
+}
+/* SECTION FORMATION */
+
+.formation{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+.main-icon{
+    color: #fa8231;
+    padding-right: 0.8rem;
+}
+
+/* SECTION EXPERIENCE PROFESSIONNELLE */
+.job{
+    padding-bottom: 0.5rem;
+}
+/* GENERIQUES POUR LES LISTES */
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    display: flex;
+    justify-content:space-between;
+}
+li p{
+    width: 800px;
+}
+
+/* LISTES */
+
+.info{
+    margin: 1.5rem;
+}
+
+.dates{
+    display: flex;
+    margin-top: 1.5rem;
+    width: auto;
+       
+}
+.big-title{
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fa8231 ;
+}
+
+/* RECOMMANDATIONS */
+
+    
+.recommandation-list{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+
+
+/* Media queries  */
+
+@media screen and  (max-width:767px){
+    .cv{
+        display: flex;
+        flex-direction: column; 
+        width: auto;
+        justify-content: center;
+    }
+    .colgauche{
+        width: auto;
+    }
+    .aside-text p{
+        text-align: center;
+    }
+    .aside-text a{
+        display: flex;
+        justify-content: center;
+    }
+    .coldroite{
+        width: auto;
+    }
+    li p{
+        width: auto;
+    }
+    li{
+        flex-direction: column;
+    }
+    .recommandation-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .recommandation-list h4{
+        margin-top: 1rem;
+    }
+    
+} 
+/* TABLETTES */
+@media only screen and (min-width: 768px) {
+    .body{
+        justify-content: center;
+    }
+    .colgauche{
+        width: 300px;
+    }
+    .aside-text p{
+        text-align: center;
+    }
+    .aside-text a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .coldroite{
+        width: auto;
+    }
+  
+    li p{
+        width:auto;
+    }
+    li{
+        flex-direction: column;
+    }
+}
+
+/* TAILLE MAC */
+
+@media screen and (min-width: 1200px) and (max-width: 1450px){
+    .body{
+        justify-content: center;
+        
+    }
+    .colgauche{
+        width: 300px; 
+        background: #fa8231;
+    }
+    .aside-text p{
+        text-align: center;
+    }
+    .aside-text a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .coldroite{
+        width: auto;
+    }
+  
+    li p{
+        width:700px;
+    }
+    li{
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+/* PC */
+@media(min-width:1451px){
+    body{
+        background: black;   
+    }
+    .cv{
+        width:60%;
+        justify-content: center; 
+        border: 2px solid orange;
+        
+    }
+    .colgauche{
+        background:#fa8231;
+    }
+    .aside-text p{
+        text-align: center;
+    }
+    .aside-text a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .coldroite{
+        width: auto;
+    }
+   
+    li p{
+        width: 600px;
+    }
+    li{
+        flex-direction:row ;
+    }
+
+}
